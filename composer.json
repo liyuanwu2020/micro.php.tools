@@ -1,8 +1,9 @@
 {
   "name": "mszlu/tools",
   "description": "Simple packaging of common tools",
-  "type": "composer",
+  "type": "library",
   "require": {
+    "php": "^8.1",
     "ext-yaf": "^3.3"
   },
   "autoload": {
@@ -15,5 +16,6 @@
       "name": "liyuanwu",
       "email": "16619891743@163.com"
     }
-  ]
+  ],
+  "license": "MIT"
 }

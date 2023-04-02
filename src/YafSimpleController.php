@@ -14,7 +14,7 @@ namespace Mszlu\Tools;
  * @method void redirect(string $url) 引发一个302重定向，重定向到另一个url
  *
  */
-class CYafSimpleController extends \Yaf_Controller_Abstract
+class YafSimpleController extends \Yaf_Controller_Abstract
 {
 
     /**
