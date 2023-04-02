@@ -1,0 +1,20 @@
+{
+  "name": "mszlu/tools",
+  "description": "Simple packaging of common tools",
+  "type": "composer",
+  "require": {
+    "ext-yaf": "^3.3"
+  },
+  "license": "GPL",
+  "autoload": {
+    "psr-4": {
+      "Mszlu\\Tools\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "liyuanwu",
+      "email": "16619891743@163.com"
+    }
+  ]
+}
