@@ -1,6 +1,6 @@
 <?php
 
-namespace mszlu\tools;
+namespace Mszlu\Tools;
 
 /**
  * @method string getModuleName() 获取当前所在模块的名称
