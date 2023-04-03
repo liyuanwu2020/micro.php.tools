@@ -9,7 +9,10 @@
   "autoload": {
     "psr-4": {
       "Mszlu\\Tools\\": "src/"
-    }
+    },
+    "files": [
+      "functions.php"
+    ]
   },
   "authors": [
     {
