@@ -20,11 +20,11 @@ if (!function_exists('dateRangeConflict')) {
 }
 
 if (!function_exists('randNick')) {
-    function randNick($n = 3): string
+    function randNick($n = 3, $start = 0x4E00, $end = 0x9FA5): string
     {
         $nick = '';
         for ($i = 0; $i < $n; $i++) {
-            $nick .= mb_chr(mt_rand(0x4E00, 0x9FA5));
+            $nick .= mb_chr(mt_rand($start, $end));
         }
         return $nick;
     }
