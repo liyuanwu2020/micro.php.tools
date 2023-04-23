@@ -20,5 +20,8 @@
       "email": "16619891743@163.com"
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "require-dev": {
+    "catfan/medoo": "^2.1"
+  }
 }

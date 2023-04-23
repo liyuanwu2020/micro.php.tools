@@ -1,6 +1,6 @@
 <?php
 
-use Medoo\Medoo;
+namespace Mszlu\Tools;
 
 
 /**
@@ -18,10 +18,36 @@ use Medoo\Medoo;
  * @method static array log()
  * @method static string last()
  */
-interface DbInterface
+class DbMySQL extends ORM
 {
-    function insert();
-    function delete();
-    function update();
-    function select();
+    public function __construct()
+    {
+        parent::__construct();
+        $this->table = 'user';
+    }
+
+    public function find($id)
+    {
+        return $this->db->get($this->table, '*', ['id' => $id]);
+    }
+
+    public function all()
+    {
+        return $this->db->select($this->table, '*');
+    }
+
+    public function create(array $data)
+    {
+        $this->db->insert($this->table, $data);
+    }
+
+    public function update(array $data, $id)
+    {
+        $this->db->update($this->table, $data, ['id' => $id]);
+    }
+
+    public function delete($id)
+    {
+        $this->db->delete($this->table, ['id' => $id]);
+    }
 }
